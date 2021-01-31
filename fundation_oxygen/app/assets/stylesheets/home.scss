@@ -1,3 +1,36 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+#realiza{
+    background-image: image-url('donar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#solicita{
+    background-image: image-url('image-solicitarDonacion.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#tanque{
+    background-image: image-url('tanque_oxigeno.jpeg');
+}
+#mascarilla{
+    background-image: image-url('mascarilla.jpg');
+}
+#guantes{
+    background-image: image-url('guantes.jpg');
+}
+#mascara{
+    background-image: image-url('mascara.jpg');
+}
+#alcohol{
+    background-image: image-url('alcohol.jpg');
+}
+#silla{
+    background-image: image-url('muletas.jpg');
+}
+#muletas{
+    background-image: image-url('silla.jpg');
+}

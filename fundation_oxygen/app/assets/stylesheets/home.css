@@ -1,0 +1,14 @@
+#realiza {
+  background-image: image-url("donar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#solicita {
+  background-image: image-url("image-solicitarDonacion.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=home.css.map */

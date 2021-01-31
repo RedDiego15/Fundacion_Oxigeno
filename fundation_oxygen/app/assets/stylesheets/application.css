@@ -13,3 +13,178 @@
  *= require_tree .
  *= require_self
  */
+.active:hover{
+    color: grey;
+    text-decoration: underline;
+}
+ .centrar{
+     margin-top: auto;
+     margin-bottom: auto;
+
+ }
+ .contenedor{
+     display: flex;
+     justify-content: space-between;
+ }
+.contenedor-index{
+    width: 100%;
+    height: 38rem;
+    background-color: cornflowerblue;
+}
+
+.plans-container{
+    width: 75%;
+    display: flex;
+
+}
+.plans-container--card{
+    color: black;
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 500px;
+    height: 25rem;
+    margin: 5rem 0.7rem 1rem;
+    padding: 0 1.5rem; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
+}
+
+.main-plan__title,
+.container-solicitar-donacion .title{
+    color: white;
+    text-align: center;
+}
+.card-text{
+    margin-top: 10rem;
+}
+/*
+    Realizar Donacion
+*/
+.container-Realizar-Donacion{
+    background-color: cornflowerblue;
+    height: 94vh;
+    width: 100%;
+}
+.container-Realizar-Donacion .title{
+    color: white;
+    text-align: center;
+}
+fieldset{
+    width: 25%;
+    padding: 15px 10px;
+}
+.form-datos-donador{
+    margin-top: 2rem;
+
+}
+.form-datos-donador label,
+.container_datos label{
+    font-size: 20px;
+    font-weight: 700;
+}
+.form-datos-donador input,
+.container_datos input{
+    background-color: #e1e1e1;
+    padding: 1rem;
+    width: 100%;
+    height: 40px;
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+
+}
+.donacion-container--slider{
+    display: flex;
+    height: 18rem;
+    width: 75%;
+    overflow-x: scroll;
+    border-top: 2px solid black;
+    padding-top: 15px;
+}
+.donacion-container--card{
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+.donacion-container--card .img-producto{
+    width: 140px;
+    height: 100px;
+    background-size: cover; 
+    background-position: center;
+
+}
+.datos-cantidad-donar{
+    padding: 0;
+}
+.datos-cantidad-donar label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.datos-cantidad-donar input{
+    margin-bottom: 10px;
+    width: 145px;
+    padding-left: 10px;
+    height: 25px;
+    background-color: #e1e1e1;
+    display: block;
+    border: none;
+    border-radius: 1rem;
+}
+.datos-cantidad-donar .button{
+    padding: 0;
+    margin-top: 15px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+}
+/*
+Solicitar
+*/
+.container-solicitar-donacion{
+    height: 94vh;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+.fieldset-datos-solicitante{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding:15px
+}
+.donacion-container--slider{
+    height: 14rem;
+    margin-top: 20px;
+}
+.container_datos{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black; 
+    padding-top: 10px;
+    width: 100%;
+    height: 120px;
+}
+
+.footer-contact ul,
+.footer-contact a{
+    outline-style: none;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo p{
+    padding-top: 30px;
+    color: white;
+}
+
