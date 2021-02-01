@@ -12,8 +12,7 @@
             <label for="cedula">Cedula</label>
             <input type="number" name="cedula" id="cedula" required autocomplete="cedula" placeHolder='Ingrese Cedula'>
         </fieldset>
-        
-    
+
     <div class ="title">
         <h2>productos</h2>
     </div>
@@ -22,20 +21,21 @@
             <article class="donacion-container--card">
                 <div id="tanque" class='img-producto'></div>
                 <div class='container-donacion--number'>
-                    
+                    <p>Tanque Oxigeno </p>
                         <fieldset class='datos-cantidad-donar'>
                             <label for="cantidad">Cantidad</label>
                             <input type="cantidad" name="cantidad" id="cantidad" required placeHolder='Ingrese cantidad'>
                             <input type="submit" name="Donar" id="btn-tanque" class='button'value='Donar'onClick="realizar_Donacion(tanque,1,document.getElementbyId('cantidad').value)">
                         <fieldset>
                     
-    </form>
+    
                 </div>
             </article>
 
             <article class="donacion-container--card">
                 <div id="mascarilla" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                    <p>Mascarilla </p>
                     
                         <fieldset class='datos-cantidad-donar'>
                             <label for="cantidad">Cantidad</label>
@@ -50,6 +50,7 @@
             <article class="donacion-container--card">
                 <div id="guantes" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                    <p>Guantes </p>
                     
                         <fieldset class='datos-cantidad-donar'>
                             <label for="cantidad">Cantidad</label>
@@ -64,6 +65,7 @@
             <article class="donacion-container--card">
                 <div id="mascara" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                    <p>Mascara</p>
                     
                         <fieldset class='datos-cantidad-donar'>
                             <label for="cantidad">Cantidad</label>
@@ -78,6 +80,7 @@
             <article class="donacion-container--card">
                 <div id="alcohol" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                    <p>Alcohol </p>
                     
                         <fieldset class='datos-cantidad-donar'>
                             <label for="cantidad">Cantidad</label>
@@ -90,9 +93,9 @@
             </article>
                         
             <article class="donacion-container--card">
-                <div id="silla" class='img-producto'></div>
+                <div id="muletas" class='img-producto'></div>
                 <div class='container-donacion--number'>
-                    
+                    <p>Muletas</p>
                         <fieldset class='datos-cantidad-donar'>
                             <label for="cantidad">Cantidad</label>
                             <input type="cantidad" name="cantidad" id="cantidad" required placeHolder='Ingrese cantidad'>
@@ -104,8 +107,9 @@
             </article>
                         
             <article class="donacion-container--card">
-                <div id="muletas" class='img-producto'></div>
+                <div id="silla" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                    <p>Silla </p>
                     
                         <fieldset class='datos-cantidad-donar'>
                             <label for="cantidad">Cantidad</label>
@@ -116,6 +120,24 @@
                 </div>
                         
             </article>
+
+            <%# card extraida con get %>
+                <% @supplys.each do |resp| %>
+                    <article class="donacion-container--card">
+                    <div id="producto_sin_foto" class='img-producto'></div>
+                    <div class='container-donacion--number'>
+                        <p><%= resp["name"] %></p>
+                        <fieldset class='datos-cantidad-donar'>
+                            <label for="cantidad">Cantidad</label>
+                            <input type="cantidad" name="cantidad" id="cantidad" required placeHolder='Ingrese cantidad'>
+                            <input type="submit" name="Donar" id="btn-muletas" class='button'value='Donar' onClick="realizar_Donacion(name,id_property,document.getElementbyId('cantidad').value)">
+                        <fieldset>                 
+                    </div>
+                            
+                </article>
+            <% end%>        
+
                         
         </section>
+    </form>
 </div>

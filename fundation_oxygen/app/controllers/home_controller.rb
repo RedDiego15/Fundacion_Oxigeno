@@ -9,6 +9,7 @@ class HomeController < ApplicationController
   end
 
   def realizarDonacion
+    @supplys = HTTParty.get('https://oxigenfundationapi.herokuapp.com/api/supplys')
 
 
     def realizar_Donacion(name,id_property,amount)
