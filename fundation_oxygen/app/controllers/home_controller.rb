@@ -6,20 +6,18 @@ class HomeController < ApplicationController
 
   def index
     @response = HTTParty.get('http://localhost:8000/api/supplys')
-    # response = RestClient.get('https://pokeapi.co/api/v2/pokemon/1')
-
-    # results = JSON.parse(response.to_str)
-    # name = results['forms'][0]['name']
-    # puts "El nombre del pokemon es: #{name}"
-    # @name = "entroo"
   end
 
   def realizarDonacion
+    
   end
 
-  def SolicitarDonacion
+  # Este metodo se llama automaticamente en la vista home/solicitarDonacion
+  def solicitarDonacion
+    @supplys = HTTParty.get('http://localhost:8000/api/supplys')
+    @oxigens = HTTParty.get('http://localhost:8000/api/oxigens')  
   end
-  
+
 
 
 end

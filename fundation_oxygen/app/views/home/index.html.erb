@@ -4,6 +4,7 @@
             <h2>Conoce nuestras ofertas</h2>
         </div>
 
+<%# Prueba de usar la variable retornada en el metodo index del controller home_controller %>
         <% @response.each do |resp| %>
         <p><%= resp["name"] %> </p>
         <% end%>
