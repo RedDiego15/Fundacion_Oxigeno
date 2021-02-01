@@ -3,6 +3,11 @@
         <div class="main-plan__title">
             <h2>Conoce nuestras ofertas</h2>
         </div>
+
+        <% @response.each do |resp| %>
+        <p><%= resp["name"] %> </p>
+        <% end%>
+
         <section  class="plans-container container">
             <article class="plans-container--card" id="realiza">
                 <h3 class="recommended">Realizar Donacion</h3>

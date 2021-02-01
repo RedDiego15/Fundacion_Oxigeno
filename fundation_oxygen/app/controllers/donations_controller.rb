@@ -1,10 +1,10 @@
 require 'rest-client'
 require 'json'
 
-class HomeController < ApplicationController
+class DonationsController < ApplicationController
   before_action :set_dato, only: [:show, :edit, :update, :destroy]
 
-  def index
+  def donation
     @response = HTTParty.get('http://localhost:8000/api/supplys')
     # response = RestClient.get('https://pokeapi.co/api/v2/pokemon/1')
 
@@ -13,13 +13,6 @@ class HomeController < ApplicationController
     # puts "El nombre del pokemon es: #{name}"
     # @name = "entroo"
   end
-
-  def realizarDonacion
-  end
-
-  def SolicitarDonacion
-  end
-  
 
 
 end
