@@ -17,8 +17,8 @@
             </div>
             
             <div class='container_datos'>
-                <label for="nombre">Cual es tu nombre?</label>
-                <input type="text" name="nombre" id="nombre" autocomplete="name" placeHolder='Ingrese nombre'>    
+                <label for="nombre">Correo</label>
+                <input type="text" name="correo" id="nombre" autocomplete="name" placeHolder='Ingrese correo'>    
             </div>
             
         </fieldset>
@@ -34,7 +34,8 @@
             <article class="solicitud__donacion-container--card">
                 <div id="tanque" class='img-producto'></div>
                 <div class='container-donacion--number'>
-                        <fieldset class='datos-cantidad-donar'>
+                    <p>Tanque Oxigeno</p>    
+                    <fieldset class='datos-cantidad-donar'>
                             <input type="submit" name="Donar" id="btn-tanque" class='button'value='Solicitar'>
                         <fieldset>
                 </div>
@@ -43,7 +44,8 @@
             <article class="solicitud__donacion-container--card">
                 <div id="mascarilla" class='img-producto'></div>
                 <div class='container-donacion--number'>
-                    
+                    <p>Mascarilla</p>    
+
                         <fieldset class='datos-cantidad-donar'>
                              <input type="submit" name="Donar" id="btn-mascarilla" class='button'value='Solicitar'>
                         <fieldset>
@@ -55,7 +57,8 @@
             <article class="solicitud__donacion-container--card">
                 <div id="guantes" class='img-producto'></div>
                 <div class='container-donacion--number'>
-                    
+                <p>Guantes</p>    
+
                         <fieldset class='datos-cantidad-donar'>
                             <input type="submit" name="Donar" id="btn-guantes" class='button'value='Solicitar'>
                         <fieldset>
@@ -67,6 +70,7 @@
             <article class="solicitud__donacion-container--card">
                 <div id="mascara" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                <p>Mascara</p>    
                     
                         <fieldset class='datos-cantidad-donar'>
                             <input type="submit" name="Donar" id="btn-mascara" class='button'value='Solicitar'>
@@ -79,6 +83,7 @@
             <article class="solicitud__donacion-container--card">
                 <div id="alcohol" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                <p>Alcohol</p>    
                     
                         <fieldset class='datos-cantidad-donar'>
                             <input type="submit" name="Donar" id="btn-alcohol" class='button'value='Solicitar'>
@@ -91,6 +96,7 @@
             <article class="solicitud__donacion-container--card">
                 <div id="silla" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                <p>Silla</p>    
                     
                         <fieldset class='datos-cantidad-donar'>
                             <input type="submit" name="Donar" id="btn-silla" class='button'value='Solicitar'>
@@ -103,15 +109,32 @@
             <article class="solicitud__donacion-container--card">
                 <div id="muletas" class='img-producto'></div>
                 <div class='container-donacion--number'>
+                <p>muletas</p>    
                     
                         <fieldset class='datos-cantidad-donar'>
                             <input type="submit" name="Donar" id="btn-muletas" class='button'value='Solicitar'>
-                        <fieldset>
-                    
-                </div>
-                        
+                        <fieldset>               
+                </div>                 
             </article>
+
+            <%# card extraida con get %>
+                <% @supplys.each do |resp| %>
+                    <article class="donacion-container--card">
+                    <div id="producto_sin_foto" class='img-producto'></div>
+                    <div class='container-donacion--number'>
+                        <p><%= resp["name"] %></p>
+                        <fieldset class='datos-cantidad-donar'>
+    
+                            <input type="submit" name="solicitar" id="btn-muletas" class='button'value='Solicitar'>
+                        <fieldset>                 
+                    </div>
+                            
+                </article>
+            <% end%>
+
+
+        </section>
     </form>
                         
-        </section>
+        
 </div>
