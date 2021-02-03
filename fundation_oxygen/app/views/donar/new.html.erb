@@ -1,0 +1,26 @@
+<div class='container-Realizar-Donacion container mt-5'>
+    <div class ="title">
+        <h1>Realizar donación</h1>
+    </div>
+    
+    <%= form_for :donation, :url => { :action => :create } do |f| %>
+        <p class="mt-5">
+            <div class="form-check-label">Ingrese nombre del producto<div>
+            <%= f.text_field :name, placeHolder: "nombre del producto", class:"form-control" %>
+        </p>
+
+        <p>
+            <div class="form-check-label">Ingrese su cédula<div>
+            <%= f.text_field :idProperty, placeHolder: "cedula del donador", class:"form-control" %>
+        </p>
+
+        <p>
+            <div class="form-check-label">Ingrese la cantidad de unidades a donar<div>
+            <%= f.number_field :amount, placeHolder: "cantidad", class:"form-control" %>
+        </p>
+
+        <p class="text-center mt-5">
+            <%= f.submit 'Donar producto', class:"btn bg-btn"  %>
+        </p>
+    <% end %>
+</div>

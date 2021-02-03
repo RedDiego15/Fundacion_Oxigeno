@@ -29,7 +29,7 @@
 .contenedor-index{
     width: 100%;
     height: 38rem;
-    background-color: cornflowerblue;
+    background-color: white;
 }
 
 .plans-container{
@@ -63,12 +63,13 @@
     Realizar Donacion
 */
 .container-Realizar-Donacion{
-    background-color: cornflowerblue;
-    height: 826px;
+    /* background-color: cornflowerblue; */
+    /* height: 826px; */
     width: 100%;
 }
-.container-Realizar-Donacion .title{
-    color: white;
+
+.title{
+    color: black;
     text-align: center;
 }
 .form-datos-donador fieldset{
@@ -99,7 +100,7 @@
 .donacion-container--slider{
     display: flex;
     height: 380px;
-    width: 75%;
+    width: 100%;
     overflow-x: scroll;
     border-top: 2px solid black;
     padding-top: 15px;
@@ -205,13 +206,22 @@ FOOTER
 
 
 .footer-container{
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
     color: white;
-    background-color: black; 
     padding-top: 10px;
     width: 100%;
-    height: 120px;
+    height: 100px;
+    background-color: #161d6f;
+}
+
+.footer-contact {
+    margin: auto 0;
+}
+
+.space {
+    margin-right: 30px;
 }
 
 .footer-contact ul,
@@ -227,3 +237,20 @@ FOOTER
     color: white;
 }
 
+.title-img {
+    font-weight: 700;
+}
+
+.bg-blue {
+    background-color: #161d6f;
+}
+
+.bg-white {
+    background-color: #f6f6f6;
+}
+.bg-btn {
+    background-color: #ee6f57;
+    box-shadow: 2px 1px 15px 2px rgba(0,0,0,0.2);
+    color: white;
+    font-weight: bold;
+}
