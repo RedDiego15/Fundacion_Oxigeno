@@ -68,12 +68,17 @@
                 </div>
             </article>
 
-            <article class="donacion-container--card">
-                <div id="producto_sin_foto" class='img-producto'></div>
-                <div class='text-center mt-3 title-img'>
-                    <p>Otros </p>
-                </div>
-            </article>
+            <%# card extraida con get %>
+                <% @supplys.each do |resp| %>
+                    <article class="donacion-container--card">
+                    <div id="producto_sin_foto" class='img-producto'></div>
+                    <div class='text-center mt-3 title-img'>
+                        <p><%= resp["name"] %> </p>
+                    </div>
+                            
+                </article>
+            <% end%> 
+            
         </section>
     </div>
 </div>

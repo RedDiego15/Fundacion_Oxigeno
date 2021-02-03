@@ -1,6 +1,7 @@
 class SolicitarController < ApplicationController
 
     def index
+        @prod = HTTParty.get('https://oxigenfundationapi.herokuapp.com/api/supplys')
     end
 
     def new

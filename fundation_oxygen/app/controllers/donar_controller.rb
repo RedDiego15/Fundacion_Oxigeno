@@ -1,6 +1,6 @@
 class DonarController < ApplicationController
     def index
-
+        @supplys = HTTParty.get('https://oxigenfundationapi.herokuapp.com/api/supplys')
     end
 
     def new
