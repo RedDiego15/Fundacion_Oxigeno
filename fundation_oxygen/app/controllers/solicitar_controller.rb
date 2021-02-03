@@ -4,6 +4,7 @@ class SolicitarController < ApplicationController
     end
 
     def new
+        @response = HTTParty.get('https://oxigenfundationapi.herokuapp.com/api/supplys')
     end
 
     def create

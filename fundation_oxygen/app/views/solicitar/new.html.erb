@@ -15,13 +15,13 @@
         </p>
 
         <p>
-            <div class="form-check-label">Nombre del producto a solicitar<div>
-            <%= f.text_field :nameProduct, placeHolder: "nombre productor", class:"form-control" %>
+            <div class="form-check-label">Ingrese la cantidad de unidades a donar<div>
+            <%= f.number_field :amount, placeHolder: "cantidad", class:"form-control" %>
         </p>
 
         <p>
-            <div class="form-check-label">Ingrese la cantidad de unidades a donar<div>
-            <%= f.number_field :amount, placeHolder: "cantidad", class:"form-control" %>
+            <div class="form-check-label">Nombre del producto a solicitar<div>
+            <%= f.select :nameProduct, (@response.map {|i| i["name"] })%>
         </p>
 
         <p class="text-center">
